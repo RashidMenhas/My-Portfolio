@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+
+.mylogo {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  size: 18px;
+  line-height: 20px;
+  font-style: normal;
+  color: #6070ff;
+}
+
+.menu-icon {
+  color: #6070ff;
+}
+
+.header {
+  background: #fff;
+  height: auto;
+  background-image: url('images/header-shapes\ mobile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.heading {
+  width: 327px;
+  height: 150px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  margin-top: 100px;
+  margin-left: 24px;
+}
+
+.description {
+  width: 327px;
+  height: 146px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 24px;
+}
+
+.btn-connect {
+  width: 117;
+  height: 24px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  margin-left: 24px;
+}
+
+.social-icon {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 25px;
+  margin-left: 24px;
+}
