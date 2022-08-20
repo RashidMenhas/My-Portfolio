@@ -32,14 +32,14 @@ body {
 
 .header {
   background: #fff;
-  height: auto;
-  background-image: url('images/header-shapes\ mobile.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  height: 732px;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  background-image: url('images/header-shapes\ mobile.png');
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .heading {
@@ -48,10 +48,11 @@ body {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 50px;
   line-height: 52px;
   margin-top: 100px;
   margin-left: 24px;
+  color: #172b4d;
 }
 
 .description {
@@ -63,6 +64,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   margin-left: 24px;
+  color: #344563;
 }
 
 .btn-connect {
@@ -82,4 +84,10 @@ body {
   list-style: none;
   gap: 25px;
   margin-left: 24px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
