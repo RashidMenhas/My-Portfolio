@@ -373,4 +373,12 @@ a {
   font-size: 25px;
 }
 
+.footer-form {
+  display: flex;
+}
+
+form {
+  display: flex;
+}
+
 /* About section End  */
