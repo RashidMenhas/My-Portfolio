@@ -375,10 +375,121 @@ a {
 
 .footer-form {
   display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  align-items: center;
+  background: #6070ff;
+  border-top-left-radius: 130px;
 }
 
-form {
+.footer-bg {
   display: flex;
+  flex-direction: column;
+  background-image: url(images/footerbg.png);
+  background-position: absolute;
+  background-repeat: no-repeat;
+  background-size: 57%;
+  background-position-x: right;
+  background-position-y: 50px;
+  padding: 20px;
+}
+
+.form-heading {
+  display: flex;
+  flex-direction: column;
+  margin-top: 103px;
+}
+
+.contact-heading {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #fff;
+  width: 327px;
+  height: 80px;
+}
+
+.contact-detail {
+  width: 327px;
+  height: auto;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+}
+
+.name {
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  padding: 15px;
+  width: 300px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  color: #172b4d;
+  gap: 30px;
+}
+
+.email {
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  padding: 15px;
+  width: 300px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  color: #172b4d;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.textarea {
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  padding: 15px;
+  width: 300px;
+  height: 140px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  color: #b3bac5;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.btn-touch {
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  padding: 15px;
+  width: 150px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  gap: 30px;
+  margin-top: 20px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  margin-bottom: 50px;
 }
 
 /* About section End  */

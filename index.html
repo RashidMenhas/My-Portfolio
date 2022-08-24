@@ -180,30 +180,31 @@
             </ul>
     </section>
     <footer class="footer-form">
+        <div class="footer-bg">
         <div class="form-heading">
-            <h2>CONTACT ME </h2>
-            <p>If you have an application you are<br>
-                 interested in developing, a feature that <br>
-                  you need built or a project that needs <br>
+            <h2 class="contact-heading">Contact me </h2>
+            <p class="contact-detail">If you have an application you are
+                 interested in developing, a feature that 
+                  you need built or a project that needs
                    coding. I’d love to help with it
                  </p>
         </div>
 
-        <form>
+        <form action="https://formspree.io/f/xlevdjbz" method="post">
             <ul>
                 <li>
-                    <input type="text" maxlength="30" placeholder="Full Name" required>
+                    <input class="name" type="text" maxlength="30" name="name"  placeholder="Full Name" required>
                 </li>
                 <li>
-                    <input type="email" placeholder="Email Address" required>
+                    <input class="email" type="email" name="email" placeholder="Email Address" required>
                 </li>
                 <li>
-                    <input type="textarea" maxlength="500" placeholder="Enter text here" required>
+                    <textarea class="textarea" maxlength="500" placeholder="write yout message here" required name="message" cols="30" rows="5"></textarea>
                 </li>
             </ul>
-            <button type="submit">Get in Touch</button>
+            <button class="btn-touch" type="submit">Get in Touch</button>
         </form>
-
+    </div>
     </footer>
 </body>
 
