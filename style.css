@@ -7,7 +7,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: #f7f7f9;
 }
 
 ul {
@@ -373,13 +372,17 @@ a {
   font-size: 25px;
 }
 
+.footer-section {
+  background: #fff;
+}
+
 .footer-form {
   display: flex;
   flex-direction: column;
   margin-top: 100px;
   align-items: center;
   background: #6070ff;
-  border-top-left-radius: 130px;
+  border-top-left-radius: 104px;
 }
 
 .footer-bg {
@@ -388,7 +391,7 @@ a {
   background-image: url(images/footerbg.png);
   background-position: absolute;
   background-repeat: no-repeat;
-  background-size: 57%;
+  background-size: 61%;
   background-position-x: right;
   background-position-y: 50px;
   padding: 20px;
@@ -410,7 +413,7 @@ a {
   line-height: 52px;
   text-align: center;
   color: #fff;
-  width: 327px;
+  width: 100%;
   height: 80px;
 }
 
@@ -439,6 +442,7 @@ a {
   line-height: 20px;
   color: #172b4d;
   gap: 30px;
+  margin-top: 50px;
 }
 
 .email {
@@ -490,6 +494,12 @@ a {
   letter-spacing: 0.03em;
   color: #6070ff;
   margin-bottom: 50px;
+}
+
+.line {
+  width: 90%;
+  height: 1px;
+  background: #dfe1e6;
 }
 
 /* About section End  */
