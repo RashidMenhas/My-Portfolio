@@ -332,6 +332,7 @@ a {
   background-color: #fff;
   color: #396df2;
   border-radius: 1px solid #396df2;
+  margin-bottom: 100px;
 }
 
 .div-languages {
@@ -383,13 +384,16 @@ a {
 }
 
 .footer-section {
+  width: 100%;
+  height: auto;
   background: #fff;
 }
 
 .footer-form {
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
+
+  /* margin-top: 100px; */
   align-items: center;
   background: #6070ff;
   border-top-left-radius: 104px;
@@ -520,6 +524,7 @@ a {
   body {
     width: 100%;
     height: auto;
+    background-color: #e5e5e5;
   }
 
   .menu-icon {
@@ -551,6 +556,7 @@ a {
     background-size: 75%;
     background-position: center;
     background-repeat: no-repeat;
+    border-bottom-left-radius: 100px;
   }
 
   .navbar {
@@ -565,6 +571,7 @@ a {
     width: 100%;
     height: 100%;
     align-items: center;
+    border-bottom-left-radius: 50px;
   }
 
   .heading {
@@ -677,12 +684,6 @@ a {
     margin-top: 30px;
   }
 
-  .ab-section {
-    width: 70%;
-    height: 333px;
-    display: flex;
-  }
-
   .about-section h1 {
     margin-top: 0;
     width: 178px;
@@ -695,6 +696,7 @@ a {
   }
 
   .about-section {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -726,11 +728,13 @@ a {
   .about-container {
     display: flex;
     flex-direction: column;
+    margin-top: 120px;
     gap: 10px;
   }
 
   .language-container {
     width: 50%;
+    margin-top: 130px;
   }
 
   .div-languages .framworks {
