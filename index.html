@@ -12,26 +12,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header class="header">
         <nav class="navbar">
             <label class="mylogo">RASHID</label>
             <i class="menu-icon fa-solid fa-bars"></i>
+            <ul class="menu-list">
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
         </nav>
         <section class="section">
-            <h1 class="heading">I’m Rashid
-                Glad to see you!</h1>
-            <p class="description">I’m a software developer! I can help you build a product , feature or website Look
-                through some of my work and experience! If you like what you see and have a project you need coded,
-                don’t hestiate to contact me.</p>
-            <h5 class="btn-connect">LET’S CONNECT</h5>
-            <ul class="social-icon">
-                <li><a href=""><img src="images/icon4.svg" alt="icon-1"></a></li>
-                <li><a href=""><img src="images/icon2.svg" alt="icon-2"></a></li>
-                <li><a href=""><img src="images/icon3.svg" alt="icon-3"></a></li>
-                <li><a href=""><img src="images/icon5.svg" alt="icon-4"></a></li>
-                <li><a href=""><img src="images/icon1.svg" alt="icon-5"></a></li>
-            </ul>
+            <div class="disktop-heading">
+                <h1 class="heading">I’m Rashid
+                    Glad to see you!</h1>
+                <p class="description">I’m a software developer! I can help you build a product , feature or website
+                    Look
+                    through some of my work and experience! If you like what you see and have a project you need coded,
+                    don’t hestiate to contact me.</p>
+                <h5 class="btn-connect">LET’S CONNECT</h5>
+                <ul class="social-icon">
+                    <li><a href=""><img src="images/icon4.svg" alt="icon-1"></a></li>
+                    <li><a href=""><img src="images/icon2.svg" alt="icon-2"></a></li>
+                    <li><a href=""><img src="images/icon3.svg" alt="icon-3"></a></li>
+                    <li><a href=""><img src="images/icon5.svg" alt="icon-4"></a></li>
+                    <li><a href=""><img src="images/icon1.svg" alt="icon-5"></a></li>
+                </ul>
+            </div>
         </section>
     </header>
     <!-- cord section start from here -->
@@ -40,109 +49,134 @@
             <div class="card-heading">
                 <img src="images/card.png" alt="card">
             </div>
-            <div class="card-body">
-                <h1 class="card-title">Tonic</h1>
-                <ul class="card-author">
-                    <li class="heading5">CANOPY</li>
-                    <li class="dot"></li>
-                    <li  class="author-details">Back End Dev</li>
-                    <li class="dot"></li>
-                    <li  class="author-details">2015</li>
+            <div class="card-center">
+                <div class="card-body">
+                    <h1 class="card-title">Tonic</h1>
+                    <ul class="card-author">
+                        <li class="heading5">CANOPY</li>
+                        <li class="dot"></li>
+                        <li class="author-details">Back End Dev</li>
+                        <li class="dot"></li>
+                        <li class="author-details">2015</li>
+                    </ul>
+                    <p class="card-description">A daily selection of privately personalized reads; no accounts or
+                        sign-ups
+                        required.</p>
+                </div>
+                <ul class="card-languages">
+                    <li class="language-item ">html</li>
+                    <li class="language-item ">css</li>
+                    <li class="language-item ">javascript</li>
                 </ul>
-                <p class="card-description">A daily selection of privately personalized reads; no accounts or sign-ups
-                    required.</p>
+                <a href="#">
+                    <div class="btn-card-one">
+                        See Project
+                    </div>
+                </a>
             </div>
-            <ul class="card-languages">
-                <li class="language-item ">html</li>
-                <li class="language-item ">css</li>
-                <li class="language-item ">javascript</li>
-            </ul>
-          <a href="#"><div class="btn-card-one">
-                See Project
-          </div>
-        </a> 
         </div>
         <!-- second card start from here -->
         <div class="card">
-            <div class="card-heading">
-                <img src="images/card-1.png" alt="card-1">
+            <div class="card-heading order-1">
+                <img src="images/cardimg2.png" alt="card-1">
             </div>
-            <div class="card-body">
-                <h1 class="card-title">Multi-Post Stories</h1>
-                <ul class="card-author">
-                    <li class="heading5">CANOPY</li>
-                    <li class="dot"></li>
-                    <li  class="author-details">Back End Dev</li>
-                    <li class="dot"></li>
-                    <li  class="author-details">2015</li>
-                </ul>
-                <p class="card-description">A daily selection of privately personalized reads; no accounts or sign-ups
-                    required.</p>
+            <div class="card-center order-0">
+                <div class="card-body">
+                    <h1 class="card-title">Multi-Post Stories</h1>
+                    <ul class="card-author">
+                        <li class="heading5">CANOPY</li>
+                        <li class="dot"></li>
+                        <li class="author-details">Full Stack Dev</li>
+                        <li class="dot"></li>
+                        <li class="author-details">2015</li>
+                    </ul>
+                    <p class="card-description">A daily selection of privately personalized reads; no accounts or
+                        sign-ups
+                        required.</p>
+                </div>
+
+                <div class="card-languages">
+                    <p class="language-item ">html</p>
+                    <p class="language-item ">css</p>
+                    <p class="language-item ">javascript</p>
+                    <p class="language-item ">Ruby on rails</p>
+
+                </div>
+                <a href="#">
+                    <div class="btn-card-one">
+                        See Project
+                    </div>
+                </a>
             </div>
-            <div class="card-languages">
-                <p class="language-item ">html</p>
-                <p class="language-item ">css</p>
-                <p class="language-item ">javascript</p>
-            </div>
-            <a href="#"><div class="btn-card-one">
-                See Project
-          </div></a>
         </div>
         <!-- third card start from here -->
         <div class="card">
             <div class="card-heading">
-                <img src="images/card-3.svg" alt="card-3">
+                <img src="images/cardimg3.png" alt="card-3">
             </div>
-            <div class="card-body">
-                <h1 class="card-title">Tonic</h1>
-                <ul class="card-author">
-                    <li class="heading5">CANOPY</li>
-                    <li class="dot"></li>
-                    <li  class="author-details">Back End Dev</li>
-                    <li class="dot"></li>
-                    <li  class="author-details">2015</li>
-                </ul>
-                <p class="card-description">A daily selection of privately personalized reads; no accounts or sign-ups
-                    required.</p>
+            <div class="card-center">
+                <div class="card-body">
+                    <h1 class="card-title">Facebook 360</h1>
+                    <ul class="card-author">
+                        <li class="heading5">FACEBOOK</li>
+                        <li class="dot"></li>
+                        <li class="author-details">Full Stack Dev</li>
+                        <li class="dot"></li>
+                        <li class="author-details">2015</li>
+                    </ul>
+                    <p class="card-description">A daily selection of privately personalized reads; no accounts or
+                        sign-ups
+                        required.</p>
+                </div>
+                <div class="card-languages">
+                    <p class="language-item ">html</p>
+                    <p class="language-item ">Ruby on rails</p>
+                    <p class="language-item ">css</p>
+                    <p class="language-item ">javascript</p>
+                </div>
+                <a href="#">
+                    <div class="btn-card-one">
+                        See Project
+                    </div>
+                </a>
             </div>
-            <div class="card-languages">
-                <p class="language-item ">html</p>
-                <p class="language-item ">css</p>
-                <p class="language-item ">javascript</p>
-            </div>
-            <a href="#"><div class="btn-card-one">
-                See Project
-          </div></a>
         </div>
         <!-- fourth card start from here -->
         <div class="card">
-            <div class="card-heading">
-                <img src="images/card-4.svg" alt="card-4">
+            <div class="card-heading order-1">
+                <img src="images/cardimg5.png" alt="card-4">
             </div>
-            <div class="card-body">
-                <h1 class="card-title">Multi-Post Stories</h1>
-                <ul class="card-author">
-                    <li class="heading5">CANOPY</li>
-                    <li class="dot"></li>
-                    <li class="author-details">Back End Dev</li>
-                    <li class="dot"></li>
-                    <li  class="author-details">2015</li>
-                </ul>
-                <p class="card-description">A daily selection of privately personalized reads; no accounts or sign-ups
-                    required.</p>
+            <div class="card-center order-0">
+                <div class="card-body">
+                    <h1 class="card-title">Uber Navigation</h1>
+                    <ul class="card-author">
+                        <li class="heading5">Uber</li>
+                        <li class="dot"></li>
+                        <li class="author-details">Lead Developer</li>
+                        <li class="dot"></li>
+                        <li class="author-details">2018</li>
+                    </ul>
+                    <p class="card-description">A daily selection of privately personalized reads; no accounts or
+                        sign-ups
+                        required.</p>
+                </div>
+                <div class="card-languages">
+                    <p class="language-item ">html</p>
+                    <p class="language-item ">css</p>
+                    <p class="language-item ">Ruby on rails</p>
+                    <p class="language-item ">javascript</p>
+                </div>
+                <a href="#">
+                    <div class="btn-card-one">
+                        See Project
+                    </div>
+                </a>
             </div>
-            <div class="card-languages">
-                <p class="language-item ">html</p>
-                <p class="language-item ">css</p>
-                <p class="language-item ">javascript</p>
-            </div>
-            <a href="#"><div class="btn-card-one">
-                See Project
-          </div></a>
         </div>
     </section>
     <!-- this is section for another card -->
     <section class="about-section">
+        <div class="about-container">
         <h1>About Myself</h1>
         <p class="about-desc">Hello I’m a software developer! I can help you build a product , feature or website Look
             through some of my work and experience! If you like what you see and have a project you need coded, don’t
@@ -156,9 +190,16 @@
             <li><a href=""><img src="images/icon3.svg" alt="icon-5"></a></li>
         </ul>
         <a href="#">
-        <div class="btn-card-one">Get my resume </div></a>
-        <ul class="div-languages">
-            <li class="language">Languages</li>
+            <div class="btn-card-one">Get my resume </div>
+        </a>
+    </div>
+    <div class="language-container">
+        <div class="div-languages">
+            <div class="down-arrow">
+            <div class="language">Languages</div>
+            <span> <i class="fa-solid fa-angle-down"></i> </span>
+        </div>
+            <ul class="row-language">
                 <li class="lang-card">
                     <img src="images/js.png" alt="js">
                     javascript
@@ -171,45 +212,49 @@
                     <img src="images/css.png" alt="css">
                     CSS
                 </li>
-                <li class="framworks">
-                    Framworks <span>></span>
-                </li>
-                <li class="line"></li>
-                <li class="framworks">
-                    Skills <span>></span>
-                </li>
-                <li class="line"></li>
             </ul>
-    </section>
-    <section class="footer-section"> 
-    <footer class="footer-form">
-        <div class="footer-bg">
-        <div class="form-heading">
-            <h2 class="contact-heading">Contact me </h2>
-            <p class="contact-detail">If you have an application you are
-                 interested in developing, a feature that 
-                  you need built or a project that needs
-                   coding. I’d love to help with it
-                 </p>
+            <div class="framworks">
+                Framworks <span>></span>
+            </div>
+            <div class="line"></div>
+            <div class="framworks">
+                Skills <span>></span>
+            </div>
+            <div class="line"></div>
         </div>
-
-        <form action="https://formspree.io/f/xlevdjbz" method="post">
-            <ul>
-                <li>
-                    <input class="name" type="text" maxlength="30" name="name"  placeholder="Full Name" required>
-                </li>
-                <li>
-                    <input class="email" type="email" name="email" placeholder="Email Address" required>
-                </li>
-                <li>
-                    <textarea class="textarea" maxlength="500" placeholder="write yout message here" required name="message" cols="30" rows="5"></textarea>
-                </li>
-            </ul>
-            <button class="btn-touch" type="submit">Get in Touch</button>
-        </form>
     </div>
-    </footer>
-</section>
+    </section>
+    <!-- footer section start -->
+    <section class="footer-section">
+        <footer class="footer-form">
+            <div class="footer-bg">
+                <div class="form-heading">
+                    <h2 class="contact-heading">Contact me </h2>
+                    <p class="contact-detail">If you have an application you are
+                        interested in developing, a feature that
+                        you need built or a project that needs
+                        coding. I’d love to help with it
+                    </p>
+                </div>
+
+                <form action="https://formspree.io/f/xlevdjbz" method="post">
+                    <ul>
+                        <li>
+                            <input class="name" type="text" maxlength="30" name="name" placeholder="Full Name" required>
+                        </li>
+                        <li>
+                            <input class="email" type="email" name="email" placeholder="Email Address" required>
+                        </li>
+                        <li>
+                            <textarea class="textarea" maxlength="500" placeholder="write yout message here" required
+                                name="message" cols="30" rows="5"></textarea>
+                        </li>
+                    </ul>
+                    <button class="btn-touch" type="submit">Get in Touch</button>
+                </form>
+            </div>
+        </footer>
+    </section>
 </body>
 
 </html>
