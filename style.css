@@ -720,7 +720,7 @@ a {
   }
 
   .line {
-    width: 100%;
+    width: 85%;
     height: 1px;
     background: #dfe1e6;
   }
@@ -738,7 +738,7 @@ a {
   }
 
   .div-languages .framworks {
-    width: 100%;
+    width: 80%;
   }
 
   .footer-bg {
@@ -757,6 +757,108 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  .card-author .author-details {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #6b778c;
+  }
+
+  .about-section .about-desc {
+    width: 447px;
+    height: 102px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  .contact-detail {
+    width: 569px;
+    height: 102px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #ebebff;
+  }
+
+  .about-section .btn-card-one {
+    width: 140px;
+    height: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #396df2;
+  }
+
+  .name {
+    width: 440px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #172b4d;
+    background: #fff;
+    border: 1px solid #cfd8dc;
+    border-radius: 2px;
+  }
+
+  .email {
+    width: 440px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #172b4d;
+    background: #fff;
+    border: 1px solid #cfd8dc;
+    border-radius: 2px;
+  }
+
+  .textarea {
+    width: 440px;
+    background: #fff;
+    border: 1px solid #cfd8dc;
+    border-radius: 2px;
+    padding: 15px;
+    height: 140px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: #b3bac5;
+    gap: 30px;
+    margin-top: 20px;
+  }
+
+  .down-arrow {
+    display: flex;
+    flex-direction: row;
+    width: 530px;
+    font-size: 20px;
+    justify-content: space-between;
   }
 }
 
