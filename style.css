@@ -537,7 +537,7 @@ a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 50px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -864,6 +864,12 @@ a {
     font-size: 20px;
     justify-content: space-between;
   }
+
+  img:hover {
+    width: 100px;
+    height: 100px;
+  }
+  
 }
 
 /* Desktop version End  */
