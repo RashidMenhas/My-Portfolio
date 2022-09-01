@@ -675,7 +675,7 @@ a {
     border-radius: 8px;
   }
 
-  .card-heading img:hover {
+  .card-heading:hover {
     transition: 0.5s;
     transform: scale(1.05);
   }
