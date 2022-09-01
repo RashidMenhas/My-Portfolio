@@ -77,6 +77,11 @@ a {
   line-height: 24px;
   margin-left: 24px;
   color: #344563;
+  transition: transform 2s;
+}
+
+.description:hover {
+  transform: translate(10px);
 }
 
 .btn-connect {
@@ -606,6 +611,11 @@ a {
     font-size: 13px;
     line-height: 22px;
     color: #344563;
+    transition: transform 2s;
+  }
+
+  .description:hover {
+    transform: translate(10px);
   }
 
   .btn-connect {
@@ -665,6 +675,11 @@ a {
     border-radius: 8px;
   }
 
+  .card-heading img:hover {
+    transition: 0.5s;
+    transform: scale(1.05);
+  }
+
   .card-description {
     width: 370px;
     height: 50px;
@@ -721,6 +736,11 @@ a {
     justify-content: start;
     align-items: flex-start;
     padding: 10px;
+  }
+
+  .lang-card:hover {
+    transition: 0.5s;
+    transform: scale(1.05);
   }
 
   .line {
