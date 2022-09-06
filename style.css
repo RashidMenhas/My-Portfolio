@@ -2,6 +2,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(359deg);
   }
@@ -40,6 +41,7 @@ a {
   line-height: 20px;
   font-style: normal;
   color: #6070ff;
+  animation: rotation 4s;
 }
 
 .menu-icon {
@@ -61,10 +63,6 @@ a {
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.mylogo {
-  animation: rotation 4s;
 }
 
 .heading {
@@ -727,7 +725,7 @@ a {
     margin-bottom: 20px;
     margin-left: 12px;
     margin-top: 20px;
-}
+  }
 
   .about-section h1 {
     margin-top: 0;
@@ -830,10 +828,6 @@ a {
     transition: transform 2s;
   }
 
-  .description:hover {
-    transform: translate(10px);
-  }
-
   .contact-detail {
     width: 569px;
     height: 102px;
@@ -862,7 +856,7 @@ a {
     margin-bottom: 20px;
     margin-left: 12px;
     margin-top: 20px;
-}
+  }
 
   .name {
     width: 440px;
@@ -933,18 +927,16 @@ a {
     color: #7f8cff;
     margin-left: 24px;
   }
-  li img:hover{
+
+  .icon:hover {
     animation: rotation 4s;
   }
- 
+
   .btn-touch:hover {
-  transition: 0.5s;
-  background-color: #396df2;
-  color: white;
-
+    transition: 0.5s;
+    background-color: #396df2;
+    color: white;
   }
-
-  
 }
 
 /* Desktop version End  */
