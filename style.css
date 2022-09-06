@@ -665,6 +665,11 @@ a {
     color: #091e42;
   }
 
+  .row-language .lang-card img {
+    width: 70px;
+    height: 70px;
+  }
+
   .card-section {
     width: 100%;
     height: auto;
