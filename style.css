@@ -11,11 +11,11 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   width: 100%;
-  box-sizing: border-box;
 }
 
 ul {
@@ -44,22 +44,13 @@ a {
   animation: rotation 4s;
 }
 
-.menu-icon {
-  display: block;
-  color: #6070ff;
-}
-
-.menu-list {
-  display: none;
-}
-
 .header {
   background: #fff;
   height: 732px;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  background-image: url('images/header-shapes\ mobile.png');
+  background-image: url('images/header-shapes-mobile.png');
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -78,6 +69,53 @@ a {
   color: #172b4d;
 }
 
+/* Hamburger */
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 100;
+  opacity: 0.95;
+  background: #384afd;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  padding: 24px 24px 0;
+  gap: 24px;
+}
+
+.menu-list--desktop-icon {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #FFFFFF;
+}
+
+.menu-list--desktop-icon a {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  color: #FFFFFF;
+}
+
+#hamburger {
+  display: block;
+  align-self: flex-end;
+  padding-right: 8px;
+}
+
+#cross {
+  align-self: flex-end;
+  padding-right: 8px;
+}
+
+/* Hero Section */
 .description {
   width: 327px;
   height: 146px;
@@ -96,7 +134,7 @@ a {
 }
 
 .btn-connect {
-  width: 117;
+  width: 117px;
   height: 40px;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
@@ -191,7 +229,6 @@ a {
 
 .card-body .card-author .heading5 {
   font-family: 'Poppins', sans-serif;
-  font-family: 600px;
   font-size: 15px;
   font-weight: 700;
   line-height: 16px;
@@ -233,7 +270,7 @@ a {
 
 .language-item {
   font-family: 'Poppins', sans-serif;
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
@@ -344,7 +381,7 @@ a {
   width: 155px;
   height: 41px;
   font-family: 'Poppins', sans-serif;
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 17px;
   background: #fff;
   line-height: 21px;
@@ -415,8 +452,6 @@ a {
 .footer-form {
   display: flex;
   flex-direction: column;
-
-  /* margin-top: 100px; */
   align-items: center;
   background: #6070ff;
   border-top-left-radius: 104px;
@@ -550,12 +585,28 @@ a {
     background-color: #e5e5e5;
   }
 
+  /* Hamburger Desktop */
+  .menu-list--desktop-icon {
+    display: block;
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+  #cross {
+    display: none;
+  }
+
   .menu-icon {
     color: #6070ff;
     display: none;
   }
 
   .menu-list {
+    background: #7f8cff;
+    position: relative;
+    background: none;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -567,8 +618,24 @@ a {
     font-size: 15px;
     line-height: 20px;
     margin-right: 20px;
+    padding: 0;
+    width: auto;
+    height: auto;
+    top: auto;
+    left: auto;
   }
 
+  .menu-list--desktop-icon a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+  }
+
+
+  /* Hero Section */
   .header {
     width: 100%;
     background: #fff;
@@ -718,7 +785,7 @@ a {
     width: 123px;
     height: 41px;
     font-family: 'Poppins', sans-serif;
-    font-weight: 500px;
+    font-weight: 500;
     font-size: 17px;
     background: #fff;
     line-height: 21px;
