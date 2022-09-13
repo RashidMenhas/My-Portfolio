@@ -17,12 +17,12 @@
     <header class="header">
         <nav class="navbar">
             <label class="mylogo">RASHID</label>
-            <ul class="menu-list">
+            <img id="hamburger" src="images/hamburger-icon.svg" alt="Menu">
+            <ul class="menu-list display-none">
                 <li id="cross"><img src="images/cross-icon.svg" alt="close"></li>
-                <li id="hamburger"><img src="images/hamburger-icon.svg" alt="Menu"></li>
-                <li class="menu-list--desktop-icon"><a  href="">Portfolio</a></li>
-                <li class="menu-list--desktop-icon"><a href="">About</a></li>
-                <li class="menu-list--desktop-icon"><a href="">Contact</a></li>
+                <li class="menu-list--desktop-icon"><a  href="#portfolio">Portfolio</a></li>
+                <li class="menu-list--desktop-icon"><a href="#about">About</a></li>
+                <li class="menu-list--desktop-icon"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <section class="section">
@@ -45,7 +45,7 @@
         </section>
     </header>
     <!-- cord section start from here -->
-    <section class="card-section">
+    <section id="portfolio" class="card-section">
         <div class="card">
             <div class="card-heading">
                 <img src="images/card.png" alt="card">
@@ -168,7 +168,7 @@
         </div>
     </section>
     <!-- this is section for another card -->
-    <section class="about-section">
+    <section id="about" class="about-section">
         <div class="about-container">
         <h1>About Myself</h1>
         <p class="about-desc">Hello I’m a software developer! I can help you build a product , feature or website Look
@@ -218,7 +218,7 @@
     </div>
     </section>
     <!-- footer section start -->
-    <section class="footer-section">
+    <section id="contact" class="footer-section">
         <footer class="footer-form">
             <div class="footer-bg">
                 <div class="form-heading">
@@ -248,6 +248,8 @@
             </div>
         </footer>
     </section>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

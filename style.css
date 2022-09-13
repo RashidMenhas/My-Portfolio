@@ -115,6 +115,18 @@ a {
   padding-right: 8px;
 }
 
+.display-none {
+  display: none;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-flex {
+  display: flex;
+}
+
 /* Hero Section */
 .description {
   width: 327px;
