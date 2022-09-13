@@ -12,19 +12,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <header class="header">
         <nav class="navbar">
             <label class="mylogo">RASHID</label>
-            <i class="menu-icon fa-solid fa-bars"></i>
-            <ul class="menu-list">
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
+            <i id="menu-icon" class="menu-icon fa-sharp fa-solid fa-bars"></i>   
+            <ul id="menu-list" class="menu-list">
+                <li><i id="cross-icon" class="cross fa-solid fa-x"></i></li>
+                <li><a id="portfolio" href="#portfolio-section">Portfolio</a></li>
+                <li><a id="about" href="#about-section">About</a></li>
+                <li><a id="contact" href="#contact-section">Contact</a></li>
             </ul>
         </nav>
-        <section class="section">
+        <section id="portfolio-section" class="section">
             <div class="disktop-heading">
                 <h1 class="heading">I’m Rashid
                     Glad to see you!</h1>
@@ -92,13 +92,11 @@
                         sign-ups
                         required.</p>
                 </div>
-
                 <div class="card-languages">
                     <p class="language-item ">html</p>
                     <p class="language-item ">css</p>
                     <p class="language-item ">javascript</p>
                     <p class="language-item ">Ruby on rails</p>
-
                 </div>
                     <button class="btn-card-one" type="submit">
                         See Project
@@ -167,7 +165,7 @@
         </div>
     </section>
     <!-- this is section for another card -->
-    <section class="about-section">
+    <section id="about-section" class="about-section">
         <div class="about-container">
         <h1>About Myself</h1>
         <p class="about-desc">Hello I’m a software developer! I can help you build a product , feature or website Look
@@ -217,7 +215,7 @@
     </div>
     </section>
     <!-- footer section start -->
-    <section class="footer-section">
+    <section id="contact-section" class="footer-section">
         <footer class="footer-form">
             <div class="footer-bg">
                 <div class="form-heading">
@@ -247,6 +245,8 @@
             </div>
         </footer>
     </section>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
