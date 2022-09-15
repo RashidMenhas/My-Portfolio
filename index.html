@@ -43,6 +43,57 @@
             </div>
         </section>
     </header>
+
+
+
+    <!-- popup menu when click on btn -->
+    <div id="modal" class="modal">
+        <div id="popup-card" class="popup-card">
+            <div class="popup-heading">
+                <p class="popup-title">Tonic</p>    
+                    <i id="cross-popup" class="cross-popup fa-solid fa-x"></i>
+            </div>
+            <div class="popup-auther">
+                <ul>
+                    <li class="canopy">CANOPY</li>
+                    <li class="dot"></li>
+                    <li class="BED">Back End Dev</li>
+                    <li class="dot"></li>
+                    <li class="year">2015</li>
+                </ul>
+                <img  class="popup-img" src="images/popup-menu.svg" alt="">
+            </div>
+            <div class="p-language">
+                <p class="pragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                
+                <div class="popup-languages">
+                    <ul class="languages-first">
+                        <li class="language-item">html</li>
+                        <li class="language-item">css</li>
+                        <li class="language-item">javascript</li>
+                    </ul>
+                    <ul class="languages-second">
+                        <li class="language-item">github</li>
+                        <li class="language-item">ruby</li>
+                        <li class="language-item">Bootstrap</li>
+                    </ul>
+                    <div class="hr"></div>
+                    <div class="popup-btns">
+                        <button class="live" type="button">See live <img class="liveicon" src="images/live.svg" alt=""></button>
+                        <button class="source" type="button">See source <img class="sourceicon"  src="images/source.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="module-container" class="module-container">
+
+    </div>
+
+
+
+
+    
     <!-- cord section start from here -->
     <section class="card-section">
         <div class="card">
@@ -68,7 +119,7 @@
                     <li class="language-item ">css</li>
                     <li class="language-item ">javascript</li>
                 </ul>
-                    <button class="btn-card-one" type="submit">
+                    <button id="see-project1" class="see-project btn-card-one" type="button">
                         See Project
                     </button>
             </div>
@@ -98,7 +149,7 @@
                     <p class="language-item ">javascript</p>
                     <p class="language-item ">Ruby on rails</p>
                 </div>
-                    <button class="btn-card-one" type="submit">
+                    <button id="see-project2" class="see-project btn-card-one" type="button">
                         See Project
                     </button>
             </div>
@@ -128,7 +179,7 @@
                     <p class="language-item ">css</p>
                     <p class="language-item ">javascript</p>
                 </div>
-                    <button class="btn-card-one" type="submit">
+                    <button id="see-project3" class="see-project btn-card-one" type="button">
                         See Project
                     </button>
             </div>
@@ -158,7 +209,7 @@
                     <p class="language-item ">Ruby on rails</p>
                     <p class="language-item ">javascript</p>
                 </div>
-                    <button class="btn-card-one" type="submit">
+                    <button id="see-project4"  class="see-project btn-card-one" type="button">
                         See Project
                     </button>
             </div>
@@ -185,10 +236,10 @@
     </div>
     <div class="language-container">
         <div class="div-languages">
-            <div class="down-arrow">
+           <div class="down-arrow">
             <div class="language">Languages</div>
             <span> <i class="fa-solid fa-angle-down"></i> </span>
-        </div>
+           </div>
             <ul class="row-language">
                 <li class="lang-card">
                     <img src="images/js.png" alt="js">
