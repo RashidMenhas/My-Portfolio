@@ -13,6 +13,17 @@
   padding: 0;
 }
 
+/* Display Toggle */
+.display-none {
+  display: none;
+}
+.display-block {
+  display: block;
+}
+.display-flex {
+  display: flex;
+}
+
 body {
   width: 100%;
   box-sizing: border-box;
@@ -582,7 +593,6 @@ a {
 }
 
 .modal {
-  /* display: flex; */
   position: fixed;
   display: none;
   flex-direction: column;
@@ -592,7 +602,7 @@ a {
   right: 0;
   top: 0;
   bottom: 0;
-  z-index: 1;
+  z-index: 1000;
 }
 
 .popup-card {
@@ -1214,9 +1224,7 @@ a {
   }
 
   .modal {
-    /* display: flex; */
-
-    /* display: none; */
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
