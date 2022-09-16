@@ -56,3 +56,42 @@ crosspopup.addEventListener('click', () => {
   modal.style.display = 'none';
   modulecontainer.style.display = 'none';
 });
+
+//Projects 
+const cards = [{
+  cardId: 1,
+  title: 'Tonic',
+  desc: 'A daily selection of privately personalized reads; accounts or sign-ups required.',
+  imgScr: "images/card.png",
+  cardTechs: ["html","css","javascript"],
+  source: "#",
+  live: "#",
+  },
+  {
+    cardId: 2,
+    title: 'Tonic',
+    desc: 'A daily selection of privately personalized reads; accounts or sign-ups required.',
+    imgScr: "images/cardimg2.png",
+    cardTechs: ["html","css","javascript"],
+    source: "#",
+    live: "#",
+    },
+    {
+    cardId: 3,
+    title: 'Tonic',
+    desc: 'A daily selection of privately personalized reads; accounts or sign-ups required.',
+    imgScr: "images/cardimg3.png",
+    cardTechs: ["html","css","javascript"],
+    source: "#",
+    live: "#",
+    },
+    {
+      cardId: 4,
+      title: 'Tonic',
+      desc: 'A daily selection of privately personalized reads; accounts or sign-ups required.',
+      imgScr: "images/cardimg5.png",
+      cardTechs: ["html","css","javascript"],
+      source: "#",
+      live: "#",
+      }
+  ];
