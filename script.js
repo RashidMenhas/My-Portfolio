@@ -112,7 +112,7 @@ const projectBtn = document.getElementsByClassName('see-project');
                 <div class="popup-btns">
                     <button class="live" type="button"><a href="${cards[index].live}" target="_blank">See live</a> <img class="liveicon" src="images/live.svg" alt="">
                     </button>
-                    <button class="source" type="button"><a href="${cards[index].source }" target="_blank">See Source</a> <img class="sourceicon" src="images/source.svg"
+                    <button class="source" type="button"><a href="${cards[index].source}" target="_blank">See Source</a> <img class="sourceicon" src="images/source.svg"
                                                                          alt=""></button>
                 </div>
             </div>
@@ -132,7 +132,6 @@ const projectBtn = document.getElementsByClassName('see-project');
   });
 });
 
-
 // Email Validation
 const submit = document.getElementById('form');
 submit.addEventListener('submit', (e) => {
@@ -140,4 +139,8 @@ submit.addEventListener('submit', (e) => {
   const lowerCaseEmail = document.getElementById('email').value.toLowerCase();
   const error = document.getElementById('error-msg');
   const msg = document.createTextNode('Email should be in lower-case.');
+  if (lowerCaseEmail !== email) {
+    error.append(msg);
+    e.preventDefault();
+  }
 });
