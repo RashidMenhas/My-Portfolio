@@ -112,7 +112,7 @@ const projectBtn = document.getElementsByClassName('see-project');
                 <div class="popup-btns">
                     <button class="live" type="button"><a href="${cards[index].live}" target="_blank">See live</a> <img class="liveicon" src="images/live.svg" alt="">
                     </button>
-                    <button class="source" type="button"><a href="${cards[index].source }" target="_blank">See Source</a> <img class="sourceicon" src="images/source.svg"
+                    <button class="source" type="button"><a href="${cards[index].source}" target="_blank">See Source</a> <img class="sourceicon" src="images/source.svg"
                                                                          alt=""></button>
                 </div>
             </div>
