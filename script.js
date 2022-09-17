@@ -2,57 +2,135 @@ const crossIcon = document.getElementById('cross-icon');
 const menuicon = document.getElementById('menu-icon');
 const menuList = document.getElementById('menu-list');
 const portfolio = document.getElementById('portfolio');
-const about = document.getElementById('about');
-const contact = document.getElementById('contact');
-const seeproject1 = document.getElementById('see-project1');
-const seeproject2 = document.getElementById('see-project2');
-const seeproject3 = document.getElementById('see-project3');
-const seeproject4 = document.getElementById('see-project4');
-
-const modal = document.getElementById('modal');
-const modulecontainer = document.getElementById('module-container');
-const crosspopup = document.getElementById('cross-popup');
 
 menuicon.addEventListener('click', () => {
-  menuList.style.display = 'flex';
+    menuList.style.display = 'flex';
 });
 crossIcon.addEventListener('click', () => {
-  menuList.style.display = 'none';
+    menuList.style.display = 'none';
 });
 
-portfolio.addEventListener('click', () => {
-  menuList.style.display = 'none';
-});
+//Projects
+const cards = [{
+    cardId: 1,
+    title: 'Tonic',
+    desc: 'A daily selection of privately personalized reads; accounts or sign-ups required.',
+    imgScr: "images/card.png",
+    cardTechs: ["html", "css", "javascript"],
+    source: "#",
+    live: "#",
+},
+    {
+        cardId: 2,
+        title: 'Tonic',
+        desc: 'A daily selection of privately personalized reads; accounts or sign-ups required.',
+        imgScr: "images/cardimg2.png",
+        cardTechs: ["html", "css", "javascript"],
+        source: "#",
+        live: "#",
+    },
+    {
+        cardId: 3,
+        title: 'Tonic',
+        desc: 'A daily selection of privately personalized reads; accounts or sign-ups required.',
+        imgScr: "images/cardimg3.png",
+        cardTechs: ["html", "css", "javascript"],
+        source: "#",
+        live: "#",
+    },
+    {
+        cardId: 4,
+        title: 'Tonic',
+        desc: 'A daily selection of privately personalized reads; accounts or sign-ups required.',
+        imgScr: "images/cardimg5.png",
+        cardTechs: ["html", "css", "javascript"],
+        source: "#",
+        live: "#",
+    }
+];
 
-about.addEventListener('click', () => {
-  menuList.style.display = 'none';
+//Dynamic Card Section
+let cardSection = ``;
+cards.forEach(card => {
+    cardSection += `<div class="card">
+          <div class="card-heading">
+              <img src="${card.imgScr}" alt="card">
+          </div>
+          <div class="card-center">
+              <div class="card-body">
+                  <h1 class="card-title">${card.title}</h1>
+                  <ul class="card-author">
+                      <li class="heading5">CANOPY</li>
+                      <li class="dot"></li>
+                      <li class="author-details">Back End Dev</li>
+                      <li class="dot"></li>
+                      <li class="author-details">2015</li>
+                  </ul>
+                  <p class="card-description">${card.desc}</p>
+              </div>
+              <ul class="card-languages">
+                  <li class="language-item ">${card.cardTechs[0]}</li>
+                  <li class="language-item ">${card.cardTechs[1]}</li>
+                  <li class="language-item ">${card.cardTechs[2]}</li>
+              </ul>
+                  <button id="see-project1" class="see-project btn-card-one" type="button">
+                      See Project
+                  </button>
+          </div>
+      </div>`
 });
+document.getElementsByClassName("card-section")[0].insertAdjacentHTML("afterbegin", cardSection);
 
-contact.addEventListener('click', () => {
-  menuList.style.display = 'none';
-});
+//Dynamic Modal
+let modal = ``;
+let projectBtn = document.getElementsByClassName("see-project");
+[...projectBtn].forEach((btn, index) => {
+    btn.addEventListener('click', () => {
+        modal += `<div id="modal" class="modal">
+    <div id="popup-card" class="popup-card">
+        <div class="popup-heading">
+            <p class="popup-title">${cards[index].title}</p>
+            <i id="cross-popup" class="cross-popup fa-solid fa-x"></i>
+        </div>
+        <div class="popup-auther">
+            <ul>
+                <li class="canopy">CANOPY</li>
+                <li class="dot"></li>
+                <li class="BED">Back End Dev</li>
+                <li class="dot"></li>
+                <li class="year">2015</li>
+            </ul>
+            <img class="popup-img" src="${cards[index].imgScr}" alt="">
+        </div>
+        <div class="p-language">
+            <p class="pragraph">${cards[index].desc}</p>
+            <div class="popup-languages">
+                <ul class="languages-first">
+                    <li class="language-item">${cards[index].cardTechs[0]}</li>
+                    <li class="language-item">${cards[index].cardTechs[1]}</li>
+                    <li class="language-item">${cards[index].cardTechs[2]}</li>
+                </ul>
+                <div class="hr"></div>
+                <div class="popup-btns">
+                    <button class="live" type="button">See live <img class="liveicon" src="images/live.svg" alt="">
+                    </button>
+                    <button class="source" type="button">See source <img class="sourceicon" src="images/source.svg"
+                                                                         alt=""></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="module-container" class="module-container"></div>`
+        document.body.insertAdjacentHTML('beforeend', modal)
+        document.getElementById("modal").style.display = "flex";
+        document.getElementById("module-container").style.display = 'flex';
+        let modalCross = document.getElementById("cross-popup");
+        modalCross.addEventListener('click', () => {
+            document.getElementById("modal").style.display = "none";
+            document.getElementById("module-container").style.display = "none";
+            modal.remove();
+        })
 
-seeproject1.addEventListener('click', () => {
-  modal.style.display = 'flex';
-  modulecontainer.style.display = 'unset';
-});
-
-seeproject2.addEventListener('click', () => {
-  modal.style.display = 'flex';
-  modulecontainer.style.display = 'unset';
-});
-
-seeproject3.addEventListener('click', () => {
-  modal.style.display = 'flex';
-  modulecontainer.style.display = 'unset';
-});
-
-seeproject4.addEventListener('click', () => {
-  modal.style.display = 'flex';
-  modulecontainer.style.display = 'unset';
-});
-
-crosspopup.addEventListener('click', () => {
-  modal.style.display = 'none';
-  modulecontainer.style.display = 'none';
-});
+    })
+})

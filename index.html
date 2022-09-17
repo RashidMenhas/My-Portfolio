@@ -6,240 +6,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rashid's Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <label class="mylogo">RASHID</label>
-            <i id="menu-icon" class="menu-icon fa-sharp fa-solid fa-bars"></i>   
-            <ul id="menu-list" class="menu-list">
-                <li><i id="cross-icon" class="cross fa-solid fa-x"></i></li>
-                <li><a id="portfolio" href="#portfolio-section">Portfolio</a></li>
-                <li><a id="about" href="#about-section">About</a></li>
-                <li><a id="contact" href="#contact-section">Contact</a></li>
+<header class="header">
+    <nav class="navbar">
+        <label class="mylogo">RASHID</label>
+        <i id="menu-icon" class="menu-icon fa-sharp fa-solid fa-bars"></i>
+        <ul id="menu-list" class="menu-list">
+            <li><i id="cross-icon" class="cross fa-solid fa-x"></i></li>
+            <li><a id="portfolio" href="#portfolio-section">Portfolio</a></li>
+            <li><a id="about" href="#about-section">About</a></li>
+            <li><a id="contact" href="#contact-section">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="portfolio-section" class="section">
+        <div class="disktop-heading">
+            <h1 class="heading">I’m Rashid
+                Glad to see you!</h1>
+            <p class="description">I’m a software developer! I can help you build a product , feature or website
+                Look
+                through some of my work and experience! If you like what you see and have a project you need coded,
+                don’t hestiate to contact me.</p>
+            <h5 class="btn-connect">LET’S CONNECT</h5>
+            <ul class="social-icon">
+                <li><a href=""><img class="icon" src="images/icon4.svg" alt="icon-1"></a></li>
+                <li><a href=""><img class="icon" src="images/icon2.svg" alt="icon-2"></a></li>
+                <li><a href=""><img class="icon" src="images/icon3.svg" alt="icon-3"></a></li>
+                <li><a href=""><img class="icon" src="images/icon5.svg" alt="icon-4"></a></li>
+                <li><a href=""><img class="icon" src="images/icon1.svg" alt="icon-5"></a></li>
             </ul>
-        </nav>
-        <section id="portfolio-section" class="section">
-            <div class="disktop-heading">
-                <h1 class="heading">I’m Rashid
-                    Glad to see you!</h1>
-                <p class="description">I’m a software developer! I can help you build a product , feature or website
-                    Look
-                    through some of my work and experience! If you like what you see and have a project you need coded,
-                    don’t hestiate to contact me.</p>
-                <h5 class="btn-connect">LET’S CONNECT</h5>
-                <ul class="social-icon">
-                    <li><a href=""><img class="icon" src="images/icon4.svg" alt="icon-1"></a></li>
-                    <li><a href=""><img  class="icon" src="images/icon2.svg" alt="icon-2"></a></li>
-                    <li><a href=""><img  class="icon" src="images/icon3.svg" alt="icon-3"></a></li>
-                    <li><a href=""><img class="icon"  src="images/icon5.svg" alt="icon-4"></a></li>
-                    <li><a href=""><img class="icon"  src="images/icon1.svg" alt="icon-5"></a></li>
-                </ul>
-            </div>
-        </section>
-    </header>
-
-
-
-    <!-- popup menu when click on btn -->
-    <div id="modal" class="modal">
-        <div id="popup-card" class="popup-card">
-            <div class="popup-heading">
-                <p class="popup-title">Tonic</p>    
-                    <i id="cross-popup" class="cross-popup fa-solid fa-x"></i>
-            </div>
-            <div class="popup-auther">
-                <ul>
-                    <li class="canopy">CANOPY</li>
-                    <li class="dot"></li>
-                    <li class="BED">Back End Dev</li>
-                    <li class="dot"></li>
-                    <li class="year">2015</li>
-                </ul>
-                <img  class="popup-img" src="images/popup-menu.svg" alt="">
-            </div>
-            <div class="p-language">
-                <p class="pragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                
-                <div class="popup-languages">
-                    <ul class="languages-first">
-                        <li class="language-item">html</li>
-                        <li class="language-item">css</li>
-                        <li class="language-item">javascript</li>
-                    </ul>
-                    <ul class="languages-second">
-                        <li class="language-item">github</li>
-                        <li class="language-item">ruby</li>
-                        <li class="language-item">Bootstrap</li>
-                    </ul>
-                    <div class="hr"></div>
-                    <div class="popup-btns">
-                        <button class="live" type="button">See live <img class="liveicon" src="images/live.svg" alt=""></button>
-                        <button class="source" type="button">See source <img class="sourceicon"  src="images/source.svg" alt=""></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="module-container" class="module-container">
-
-    </div>
-
-
-
-
-    
-    <!-- cord section start from here -->
-    <section class="card-section">
-        <div class="card">
-            <div class="card-heading">
-                <img src="images/card.png" alt="card">
-            </div>
-            <div class="card-center">
-                <div class="card-body">
-                    <h1 class="card-title">Tonic</h1>
-                    <ul class="card-author">
-                        <li class="heading5">CANOPY</li>
-                        <li class="dot"></li>
-                        <li class="author-details">Back End Dev</li>
-                        <li class="dot"></li>
-                        <li class="author-details">2015</li>
-                    </ul>
-                    <p class="card-description">A daily selection of privately personalized reads; no accounts or
-                        sign-ups
-                        required.</p>
-                </div>
-                <ul class="card-languages">
-                    <li class="language-item ">html</li>
-                    <li class="language-item ">css</li>
-                    <li class="language-item ">javascript</li>
-                </ul>
-                    <button id="see-project1" class="see-project btn-card-one" type="button">
-                        See Project
-                    </button>
-            </div>
-        </div>
-        <!-- second card start from here -->
-        <div class="card">
-            <div class="card-heading order-1">
-                <img src="images/cardimg2.png" alt="card-1">
-            </div>
-            <div class="card-center order-0">
-                <div class="card-body">
-                    <h1 class="card-title">Multi-Post Stories</h1>
-                    <ul class="card-author">
-                        <li class="heading5">CANOPY</li>
-                        <li class="dot"></li>
-                        <li class="author-details">Full Stack Dev</li>
-                        <li class="dot"></li>
-                        <li class="author-details">2015</li>
-                    </ul>
-                    <p class="card-description">A daily selection of privately personalized reads; no accounts or
-                        sign-ups
-                        required.</p>
-                </div>
-                <div class="card-languages">
-                    <p class="language-item ">html</p>
-                    <p class="language-item ">css</p>
-                    <p class="language-item ">javascript</p>
-                    <p class="language-item ">Ruby on rails</p>
-                </div>
-                    <button id="see-project2" class="see-project btn-card-one" type="button">
-                        See Project
-                    </button>
-            </div>
-        </div>
-        <!-- third card start from here -->
-        <div class="card">
-            <div class="card-heading">
-                <img src="images/cardimg3.png" alt="card-3">
-            </div>
-            <div class="card-center">
-                <div class="card-body">
-                    <h1 class="card-title">Facebook 360</h1>
-                    <ul class="card-author">
-                        <li class="heading5">FACEBOOK</li>
-                        <li class="dot"></li>
-                        <li class="author-details">Full Stack Dev</li>
-                        <li class="dot"></li>
-                        <li class="author-details">2015</li>
-                    </ul>
-                    <p class="card-description">A daily selection of privately personalized reads; no accounts or
-                        sign-ups
-                        required.</p>
-                </div>
-                <div class="card-languages">
-                    <p class="language-item ">html</p>
-                    <p class="language-item ">Ruby on rails</p>
-                    <p class="language-item ">css</p>
-                    <p class="language-item ">javascript</p>
-                </div>
-                    <button id="see-project3" class="see-project btn-card-one" type="button">
-                        See Project
-                    </button>
-            </div>
-        </div>
-        <!-- fourth card start from here -->
-        <div class="card">
-            <div class="card-heading order-1">
-                <img src="images/cardimg5.png" alt="card-4">
-            </div>
-            <div class="card-center order-0">
-                <div class="card-body">
-                    <h1 class="card-title">Uber Navigation</h1>
-                    <ul class="card-author">
-                        <li class="heading5">Uber</li>
-                        <li class="dot"></li>
-                        <li class="author-details">Lead Developer</li>
-                        <li class="dot"></li>
-                        <li class="author-details">2018</li>
-                    </ul>
-                    <p class="card-description">A daily selection of privately personalized reads; no accounts or
-                        sign-ups
-                        required.</p>
-                </div>
-                <div class="card-languages">
-                    <p class="language-item ">html</p>
-                    <p class="language-item ">css</p>
-                    <p class="language-item ">Ruby on rails</p>
-                    <p class="language-item ">javascript</p>
-                </div>
-                    <button id="see-project4"  class="see-project btn-card-one" type="button">
-                        See Project
-                    </button>
-            </div>
         </div>
     </section>
-    <!-- this is section for another card -->
-    <section id="about-section" class="about-section">
-        <div class="about-container">
+</header>
+
+<!-- Dynamic card Section -->
+<section class="card-section">
+
+</section>
+
+
+<!-- this is section for another card -->
+<section id="about-section" class="about-section">
+    <div class="about-container">
         <h1>About Myself</h1>
-        <p class="about-desc">Hello I’m a software developer! I can help you build a product , feature or website Look
-            through some of my work and experience! If you like what you see and have a project you need coded, don’t
+        <p class="about-desc">Hello I’m a software developer! I can help you build a product , feature or website
+            Look
+            through some of my work and experience! If you like what you see and have a project you need coded,
+            don’t
             hestiate to contact me.</p>
         <h5 class="btn-connect">LET’S CONNECT</h5>
         <ul class="social-icon">
-            <li><a href=""><img  class="icon" src="images/icon5.svg" alt="icon-1"></a></li>
-            <li><a href=""><img  class="icon" src="images/icon2.svg" alt="icon-2"></a></li>
-            <li><a href=""><img  class="icon" src="images/icon1.svg" alt="icon-3"></a></li>
-            <li><a href=""><img  class="icon" src="images/icon4.svg" alt="icon-4"></a></li>
-            <li><a href=""><img  class="icon" src="images/icon3.svg" alt="icon-5"></a></li>
+            <li><a href=""><img class="icon" src="images/icon5.svg" alt="icon-1"></a></li>
+            <li><a href=""><img class="icon" src="images/icon2.svg" alt="icon-2"></a></li>
+            <li><a href=""><img class="icon" src="images/icon1.svg" alt="icon-3"></a></li>
+            <li><a href=""><img class="icon" src="images/icon4.svg" alt="icon-4"></a></li>
+            <li><a href=""><img class="icon" src="images/icon3.svg" alt="icon-5"></a></li>
         </ul>
-            <button class="btn-card-one" type="submit">
-                Get my resume
-            </button>
+        <button class="btn-card-one" type="submit">
+            Get my resume
+        </button>
     </div>
     <div class="language-container">
         <div class="div-languages">
-           <div class="down-arrow">
-            <div class="language">Languages</div>
-            <span> <i class="fa-solid fa-angle-down"></i> </span>
-           </div>
+            <div class="down-arrow">
+                <div class="language">Languages</div>
+                <span> <i class="fa-solid fa-angle-down"></i> </span>
+            </div>
             <ul class="row-language">
                 <li class="lang-card">
                     <img src="images/js.png" alt="js">
@@ -264,40 +102,40 @@
             <div class="line"></div>
         </div>
     </div>
-    </section>
-    <!-- footer section start -->
-    <section id="contact-section" class="footer-section">
-        <footer class="footer-form">
-            <div class="footer-bg">
-                <div class="form-heading">
-                    <h2 class="contact-heading">Contact me </h2>
-                    <p class="contact-detail">If you have an application you are
-                        interested in developing, a feature that
-                        you need built or a project that needs
-                        coding. I’d love to help with it
-                    </p>
-                </div>
-
-                <form action="https://formspree.io/f/xlevdjbz" method="post">
-                    <ul>
-                        <li>
-                            <input class="name" type="text" maxlength="30" name="name" placeholder="Full Name" required>
-                        </li>
-                        <li>
-                            <input class="email" type="email" name="email" placeholder="Email Address" required>
-                        </li>
-                        <li>
-                            <textarea class="textarea" maxlength="500" placeholder="write yout message here" required
-                                name="message" cols="30" rows="5"></textarea>
-                        </li>
-                    </ul>
-                    <button class="btn-touch" type="submit">Get in Touch</button>
-                </form>
+</section>
+<!-- footer section start -->
+<section id="contact-section" class="footer-section">
+    <footer class="footer-form">
+        <div class="footer-bg">
+            <div class="form-heading">
+                <h2 class="contact-heading">Contact me </h2>
+                <p class="contact-detail">If you have an application you are
+                    interested in developing, a feature that
+                    you need built or a project that needs
+                    coding. I’d love to help with it
+                </p>
             </div>
-        </footer>
-    </section>
 
-    <script src="./script.js"></script>
+            <form action="https://formspree.io/f/xlevdjbz" method="post">
+                <ul>
+                    <li>
+                        <input class="name" type="text" maxlength="30" name="name" placeholder="Full Name" required>
+                    </li>
+                    <li>
+                        <input class="email" type="email" name="email" placeholder="Email Address" required>
+                    </li>
+                    <li>
+                            <textarea class="textarea" maxlength="500" placeholder="write yout message here" required
+                                      name="message" cols="30" rows="5"></textarea>
+                    </li>
+                </ul>
+                <button class="btn-touch" type="submit">Get in Touch</button>
+            </form>
+        </div>
+    </footer>
+</section>
+
+<script src="./script.js"></script>
 </body>
 
 </html>
