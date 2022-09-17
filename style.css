@@ -822,6 +822,30 @@ a {
     margin-top: 0;
   }
 
+  .live a {
+    width: 80px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #396df2;
+  }
+
+  .source a {
+    width: 98px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #396df2;
+  }
+
   .menu-list li a {
     color: #344563;
     font-family: 'Poppins', sans-serif;
@@ -1406,18 +1430,6 @@ a {
     border-radius: 5px;
   }
 
-  .live a {
-    width: 80px;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 11px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #396df2;
-  }
-
   .liveicon {
     width: 15px;
     height: 15px;
@@ -1434,18 +1446,6 @@ a {
     padding-bottom: 12px;
     border: 1px solid #396df2;
     border-radius: 5px;
-  }
-
-  .source a {
-    width: 98px;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 11px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #396df2;
   }
 
   .sourceicon {
