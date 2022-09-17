@@ -127,7 +127,7 @@ const projectBtn = document.getElementsByClassName('see-project');
     modalCross.addEventListener('click', () => {
       document.getElementById('modal').style.display = 'none';
       document.getElementById('module-container').style.display = 'none';
-      modal.remove();
+      window.location.reload();
     });
   });
 });
