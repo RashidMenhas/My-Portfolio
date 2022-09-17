@@ -725,7 +725,62 @@ a {
   padding-bottom: 10px;
 }
 
+.popup-btns {
+  display: flex;
+  gap: 10px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
 
+.live {
+  width: 150px;
+  height: 21px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  color: #396df2;
+  border: 1px solid #396df2;
+  border-radius: 5px;
+  padding: 20px;
+  gap: 2px;
+  background: #fff;
+}
+
+.liveicon {
+  width: 15px;
+  height: 15px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 8px;
+}
+
+.source {
+  width: 150px;
+  height: 21px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  color: #396df2;
+  border: 1px solid #396df2;
+  border-radius: 5px;
+  padding: 20px;
+  gap: 2px;
+  background: #fff;
+}
+
+.sourceicon {
+  width: 15px;
+  height: 15px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2px;
+}
 
 /* About section End  */
 
