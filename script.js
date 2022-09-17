@@ -1,58 +1,56 @@
 const crossIcon = document.getElementById('cross-icon');
 const menuicon = document.getElementById('menu-icon');
 const menuList = document.getElementById('menu-list');
-const portfolio = document.getElementById('portfolio');
-
 menuicon.addEventListener('click', () => {
-    menuList.style.display = 'flex';
+  menuList.style.display = 'flex';
 });
 crossIcon.addEventListener('click', () => {
-    menuList.style.display = 'none';
+  menuList.style.display = 'none';
 });
 
-//Projects
+// Projects
 const cards = [{
-    cardId: 1,
-    title: 'Tonic',
-    desc: 'A daily selection of privately personalized reads; accounts or sign-ups required.',
-    imgScr: "images/card.png",
-    cardTechs: ["html", "css", "javascript"],
-    source: "#",
-    live: "#",
+  cardId: 1,
+  title: 'Tonic',
+  desc: 'A daily selection of privately personalized reads; accounts or sign-ups required.',
+  imgScr: 'images/card.png',
+  cardTechs: ['html', 'css', 'javascript'],
+  source: '#',
+  live: '#',
 },
-    {
-        cardId: 2,
-        title: 'Tonic',
-        desc: 'A daily selection of privately personalized reads; accounts or sign-ups required.',
-        imgScr: "images/cardimg2.png",
-        cardTechs: ["html", "css", "javascript"],
-        source: "#",
-        live: "#",
-    },
-    {
-        cardId: 3,
-        title: 'Tonic',
-        desc: 'A daily selection of privately personalized reads; accounts or sign-ups required.',
-        imgScr: "images/cardimg3.png",
-        cardTechs: ["html", "css", "javascript"],
-        source: "#",
-        live: "#",
-    },
-    {
-        cardId: 4,
-        title: 'Tonic',
-        desc: 'A daily selection of privately personalized reads; accounts or sign-ups required.',
-        imgScr: "images/cardimg5.png",
-        cardTechs: ["html", "css", "javascript"],
-        source: "#",
-        live: "#",
-    }
+{
+  cardId: 2,
+  title: 'Tonic',
+  desc: 'A daily selection of privately personalized reads; accounts or sign-ups required.',
+  imgScr: 'images/cardimg2.png',
+  cardTechs: ['html', 'css', 'javascript'],
+  source: '#',
+  live: '#',
+},
+{
+  cardId: 3,
+  title: 'Tonic',
+  desc: 'A daily selection of privately personalized reads; accounts or sign-ups required.',
+  imgScr: 'images/cardimg3.png',
+  cardTechs: ['html', 'css', 'javascript'],
+  source: '#',
+  live: '#',
+},
+{
+  cardId: 4,
+  title: 'Tonic',
+  desc: 'A daily selection of privately personalized reads; accounts or sign-ups required.',
+  imgScr: 'images/cardimg5.png',
+  cardTechs: ['html', 'css', 'javascript'],
+  source: '#',
+  live: '#',
+},
 ];
 
-//Dynamic Card Section
-let cardSection = ``;
-cards.forEach(card => {
-    cardSection += `<div class="card">
+// Dynamic Card Section
+let cardSection = '';
+cards.forEach((card) => {
+  cardSection += `<div class="card">
           <div class="card-heading">
               <img src="${card.imgScr}" alt="card">
           </div>
@@ -77,16 +75,16 @@ cards.forEach(card => {
                       See Project
                   </button>
           </div>
-      </div>`
+      </div>`;
 });
-document.getElementsByClassName("card-section")[0].insertAdjacentHTML("afterbegin", cardSection);
+document.getElementsByClassName('card-section')[0].insertAdjacentHTML('afterbegin', cardSection);
 
-//Dynamic Modal
-let modal = ``;
-let projectBtn = document.getElementsByClassName("see-project");
+// Dynamic Modal
+let modal = '';
+const projectBtn = document.getElementsByClassName('see-project');
 [...projectBtn].forEach((btn, index) => {
-    btn.addEventListener('click', () => {
-        modal += `<div id="modal" class="modal">
+  btn.addEventListener('click', () => {
+    modal += `<div id="modal" class="modal">
     <div id="popup-card" class="popup-card">
         <div class="popup-heading">
             <p class="popup-title">${cards[index].title}</p>
@@ -121,16 +119,15 @@ let projectBtn = document.getElementsByClassName("see-project");
         </div>
     </div>
 </div>
-<div id="module-container" class="module-container"></div>`
-        document.body.insertAdjacentHTML('beforeend', modal)
-        document.getElementById("modal").style.display = "flex";
-        document.getElementById("module-container").style.display = 'flex';
-        let modalCross = document.getElementById("cross-popup");
-        modalCross.addEventListener('click', () => {
-            document.getElementById("modal").style.display = "none";
-            document.getElementById("module-container").style.display = "none";
-            modal.remove();
-        })
-
-    })
-})
+<div id="module-container" class="module-container"></div>`;
+    document.body.insertAdjacentHTML('beforeend', modal);
+    document.getElementById('modal').style.display = 'flex';
+    document.getElementById('module-container').style.display = 'flex';
+    const modalCross = document.getElementById('cross-popup');
+    modalCross.addEventListener('click', () => {
+      document.getElementById('modal').style.display = 'none';
+      document.getElementById('module-container').style.display = 'none';
+      modal.remove();
+    });
+  });
+});
