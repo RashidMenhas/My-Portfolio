@@ -15,7 +15,7 @@ const cards = [{
   desc: 'A daily selection of privately personalized reads; accounts or sign-ups required.',
   imgScr: 'images/card.png',
   cardTechs: ['html', 'css', 'javascript'],
-  source: '#',
+  source: 'https://github.com/RashidMenhas/My-Portfolio',
   live: '#',
 },
 {
@@ -24,7 +24,7 @@ const cards = [{
   desc: 'A daily selection of privately personalized reads; accounts or sign-ups required.',
   imgScr: 'images/cardimg2.png',
   cardTechs: ['html', 'css', 'javascript'],
-  source: '#',
+  source: 'https://github.com/RashidMenhas/My-Portfolio',
   live: '#',
 },
 {
@@ -33,7 +33,7 @@ const cards = [{
   desc: 'A daily selection of privately personalized reads; accounts or sign-ups required.',
   imgScr: 'images/cardimg3.png',
   cardTechs: ['html', 'css', 'javascript'],
-  source: '#',
+  source: 'https://github.com/RashidMenhas/My-Portfolio',
   live: '#',
 },
 {
@@ -42,7 +42,7 @@ const cards = [{
   desc: 'A daily selection of privately personalized reads; accounts or sign-ups required.',
   imgScr: 'images/cardimg5.png',
   cardTechs: ['html', 'css', 'javascript'],
-  source: '#',
+  source: 'https://github.com/RashidMenhas/My-Portfolio',
   live: '#',
 },
 ];
@@ -110,9 +110,9 @@ const projectBtn = document.getElementsByClassName('see-project');
                 </ul>
                 <div class="hr"></div>
                 <div class="popup-btns">
-                    <button class="live" type="button">See live <img class="liveicon" src="images/live.svg" alt="">
+                    <button class="live" type="button"><a href="${cards[index].live}" target="_blank">See live</a> <img class="liveicon" src="images/live.svg" alt="">
                     </button>
-                    <button class="source" type="button">See source <img class="sourceicon" src="images/source.svg"
+                    <button class="source" type="button"><a href="${cards[index].source }" target="_blank">See Source</a> <img class="sourceicon" src="images/source.svg"
                                                                          alt=""></button>
                 </div>
             </div>

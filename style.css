@@ -1399,6 +1399,15 @@ a {
   .live {
     width: 80px;
     height: 21px;
+    padding: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: 1px solid #396df2;
+    border-radius: 5px;
+  }
+
+  .live a {
+    width: 80px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -1407,11 +1416,6 @@ a {
     align-items: center;
     text-align: center;
     color: #396df2;
-    padding: 8px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    border: 1px solid #396df2;
-    border-radius: 5px;
   }
 
   .liveicon {
@@ -1425,21 +1429,23 @@ a {
   .source {
     width: 98px;
     height: 21px;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 11px;
-
-    /* line-height: 29px; */
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #396df2;
     padding: 8px;
     padding-top: 12px;
     padding-bottom: 12px;
     border: 1px solid #396df2;
     border-radius: 5px;
+  }
+
+  .source a {
+    width: 98px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #396df2;
   }
 
   .sourceicon {
