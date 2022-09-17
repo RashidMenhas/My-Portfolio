@@ -1463,4 +1463,15 @@ a {
   }
 }
 
+/* Error Message */
+#error-msg {
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #f00;
+  padding-top: 15px;
+}
+
 /* Desktop version End  */

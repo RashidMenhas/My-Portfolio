@@ -131,3 +131,13 @@ const projectBtn = document.getElementsByClassName('see-project');
     });
   });
 });
+
+
+// Email Validation
+const submit = document.getElementById('form');
+submit.addEventListener('submit', (e) => {
+  const email = document.getElementById('email').value;
+  const lowerCaseEmail = document.getElementById('email').value.toLowerCase();
+  const error = document.getElementById('error-msg');
+  const msg = document.createTextNode('Email should be in lower-case.');
+});
