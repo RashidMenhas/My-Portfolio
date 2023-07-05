@@ -2,141 +2,240 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rashid's Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rashid Menhas</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js" defer></script>
+    <script src="./assets/js/index.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
+    <script src="https://smtpjs.com/v3/smtp.js" defer></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6794015066124573"
+     crossorigin="anonymous"></script>
 </head>
 
 <body>
-<header class="header">
-    <nav class="navbar">
-        <label class="mylogo">RASHID</label>
-        <i id="menu-icon" class="menu-icon fa-sharp fa-solid fa-bars"></i>
-        <ul id="menu-list" class="menu-list">
-            <li><i id="cross-icon" class="cross fa-solid fa-x"></i></li>
-            <li><a id="portfolio" href="#portfolio-section">Portfolio</a></li>
-            <li><a id="about" href="#about-section">About</a></li>
-            <li><a id="contact" href="#contact-section">Contact</a></li>
-        </ul>
-    </nav>
-    <section id="portfolio-section" class="section">
-        <div class="disktop-heading">
-            <h1 class="heading">I’m Rashid
-                Glad to see you!</h1>
-            <p class="description">I’m a software developer! I can help you build a product , feature or website
-                Look
-                through some of my work and experience! If you like what you see and have a project you need coded,
-                don’t hestiate to contact me.</p>
-            <h5 class="btn-connect">LET’S CONNECT</h5>
-            <ul class="social-icon">
-                <li><a href=""><img class="icon" src="images/icon4.svg" alt="icon-1"></a></li>
-                <li><a href=""><img class="icon" src="images/icon2.svg" alt="icon-2"></a></li>
-                <li><a href=""><img class="icon" src="images/icon3.svg" alt="icon-3"></a></li>
-                <li><a href=""><img class="icon" src="images/icon5.svg" alt="icon-4"></a></li>
-                <li><a href=""><img class="icon" src="images/icon1.svg" alt="icon-5"></a></li>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="nav-header">
+        <a href="#">
+            <h2 class="logo">Rashid Menhas</h2>
+        </a>
+        <nav class="navbar">
+            <ul class="nav-flex">
+                <li class="nav-link">
+                    <a href="#work" class="link-nav">Portfolio</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#about" class="link-nav">About</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#contact" class="link-nav">Contact</a>
+                </li>
             </ul>
+        </nav>
+        <div class="mobile-toggle-btn">
+            <ion-icon name="menu" class="icon-menu"></ion-icon>
+            <ion-icon name="close" class="icon-menu"></ion-icon>
         </div>
+    </header>
+
+    <!--=============== HERO SECTION===============-->
+    <section id="hero" class="hero-section">
+        <div class="intro-portion">
+            <h1 class="main-heading">Hey There. I'm Menhas</h1>
+            <h3 class="supporting-text">I'm a <span class="auto-change"></span></h3>
+            <p class="description-text">
+                I can help you build a product , feature or website. Look through some
+                of my work and experience! If you like what you see and have a project
+                you need coded, don't hesitate to contact me.
+            </p>
+        </div>
+        <a href="#contact" class="btn-primary" rel="noopener">Contact Me <i class="fa fa-envelope"></i></a>
+        <ul class="social-media-icons">
+            <li>
+                <a href="https://github.com/RashidMenhas" target="_blank" rel="noopener">
+                    <div class="hero-github-icon"></div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/rashid-menhas/" target="_blank" rel="noopener">
+                    <div class="hero-linkedin-icon"></div>
+                </a>
+            </li>
+            <li>
+                <a href="https://wellfound.com/u/rashid-menhas" target="_blank" rel="noopener">
+                    <div class="hero-angel-list-icon"></div>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/RashidM83664789" target="_blank" rel="noopener">
+                    <div class="hero-twitter-list-icon"></div>
+                </a>
+            </li>
+            <li>
+                <a href="https://medium.com/@rashidmenhas10" target="_blank" rel="noopener">
+                    <div class="hero-medium-list-icon"></div>
+                </a>
+            </li>
+        </ul>
+        <!-- <div class="profile-pic"></div> -->
+        <div class="main-image"></div>
     </section>
-</header>
 
-<!-- Dynamic card Section -->
-<section class="card-section">
+    <!--=============== WORK SECTION ===============-->
+    <section id="work" class="work-section">
+        <div class="grid-items" id="grid"></div>
+    </section>
 
-</section>
-
-
-<!-- this is section for another card -->
-<section id="about-section" class="about-section">
-    <div class="about-container">
-        <h1>About Myself</h1>
-        <p class="about-desc">Hello I’m a software developer! I can help you build a product , feature or website
-            Look
-            through some of my work and experience! If you like what you see and have a project you need coded,
-            don’t
-            hestiate to contact me.</p>
-        <h5 class="btn-connect">LET’S CONNECT</h5>
-        <ul class="social-icon">
-            <li><a href=""><img class="icon" src="images/icon5.svg" alt="icon-1"></a></li>
-            <li><a href=""><img class="icon" src="images/icon2.svg" alt="icon-2"></a></li>
-            <li><a href=""><img class="icon" src="images/icon1.svg" alt="icon-3"></a></li>
-            <li><a href=""><img class="icon" src="images/icon4.svg" alt="icon-4"></a></li>
-            <li><a href=""><img class="icon" src="images/icon3.svg" alt="icon-5"></a></li>
-        </ul>
-        <button class="btn-card-one" type="submit">
-            Get my resume
-        </button>
-    </div>
-    <div class="language-container">
-        <div class="div-languages">
-            <div class="down-arrow">
-                <div class="language">Languages</div>
-                <span> <i class="fa-solid fa-angle-down"></i> </span>
-            </div>
-            <ul class="row-language">
-                <li class="lang-card">
-                    <img src="images/js.png" alt="js">
-                    javascript
-                </li>
-                <li class="lang-card">
-                    <img src="images/html.png" alt="html">
-                    HTML
-                </li>
-                <li class="lang-card">
-                    <img src="images/css.png" alt="css">
-                    CSS
-                </li>
-            </ul>
-            <div class="framworks">
-                Framworks <span>></span>
-            </div>
-            <div class="line"></div>
-            <div class="framworks">
-                Skills <span>></span>
-            </div>
-            <div class="line"></div>
-        </div>
-    </div>
-</section>
-<!-- footer section start -->
-<section id="contact-section" class="footer-section">
-    <footer class="footer-form">
-        <div class="footer-bg">
-            <div class="form-heading">
-                <h2 class="contact-heading">Contact me </h2>
-                <p class="contact-detail">If you have an application you are
-                    interested in developing, a feature that
-                    you need built or a project that needs
-                    coding. I’d love to help with it
+    <!--=============== ABOUT SECTION ===============-->
+    <section id="about" class="about-section">
+        <div class="about-flex">
+            <div class="about-content">
+                <h1 class="about-heading">About me</h1>
+                <p class="about-description">
+                    Hello, my name is Rashid Menhas. I am A full-stack web developer. I can learn new
+                    things quickly, through collaboration, communication, pair programming, and remote work. I am
+                    looking forward to becoming a proficient full-Stack software developer and utilizing my creativity
+                    to create better software and solve various real-world challenges. If you like
+                    what you see and have a project you need coded, don't hesitate to
+                    contact me.
                 </p>
+                <div class="btn-left" id="btn-id">
+                    <a href="https://drive.google.com/file/d/15wNlo1zLDYq9Vy7UrSP-w1vvFPhOGWDM/view?usp=sharing"
+                        target="_blank" rel="noopener" class="btn-primary">Get My Resume</a>
+                </div>
             </div>
-
-            <form id="form" action="https://formspree.io/f/xlevdjbz" method="post">
-                <ul>
-                    <li>
-                        <input class="name" type="text" maxlength="30" name="name" placeholder="Full Name" required>
-                    </li>
-                    <li>
-                        <input class="email" id="email" type="email" name="email" placeholder="Email Address" required>
-                    </li>
-                    <li>
-                            <textarea class="textarea" maxlength="500" placeholder="write yout message here" required
-                                      name="message" cols="30" rows="5"></textarea>
-                    </li>
-                    <li id="error-msg"></li>
-                </ul>
-                <button class="btn-touch" type="submit">Get in Touch</button>
-            </form>
+            <div class="image-container">
+                <div class="about-image"></div>
+            </div>
         </div>
-    </footer>
-</section>
+        <hr />
+        <ul class="about-list">
+            <li class="front-end-list">
+                Front-End
+                <ul>
+                    <li class="list-style-none">Javascript</li>
+                    <li class="list-style-none">TypeScript</li>
+                    <li class="list-style-none">React</li>
+                    <li class="list-style-none">Redux</li>
+                    <li class="list-style-none">jQuery</li>
+                    <li class="list-style-none">HTML5</li>
+                    <li class="list-style-none">CSS3</li>
+                    <li class="list-style-none">Bootstrap</li>
+                    <li class="list-style-none">Tailwind</li>
+                </ul>
+            </li>
+            <li class="back-end-list">
+                Back-End
+                <ul>
+                    <li class="list-style-none">Ruby</li>
+                    <li class="list-style-none">Ruby on Rails</li>
+                    <li class="list-style-none">Rails</li>
+                    <li class="list-style-none">Java</li>
+                    <li class="list-style-none">Spring Boot</li>
+                    <li class="list-style-none">PHP</li>
+                    <li class="list-style-none">C++</li>
+                    <li class="list-style-none">MySQL</li>
+                    <li class="list-style-none">PostgreSQL</li>
+                    <li class="list-style-none">Mongo DB</li>
+                    <li class="list-style-none">MERN Stack</li>
+                </ul>
+            </li>
+            <li class="skills-list">
+                Skills
+                <ul>
+                    <li class="list-style-none">Codekit</li>
+                    <li class="list-style-none">Git</li>
+                    <li class="list-style-none">Github</li>
+                    <li class="list-style-none">Codepen</li>
+                    <li class="list-style-none">Terminal</li>
+                    <li class="list-style-none">Heroku</li>
+                    <li class="list-style-none">Netlify</li>
+                    <li class="list-style-none">RSpec</li>
+                    <li class="list-style-none">TDD</li>
+                    <li class="list-style-none">Chrome Dev Tools</li>
+                </ul>
+            </li>
+            <li class="professional-list">
+                Professional
+                <ul>
+                    <li class="list-style-none">Remote Pair-Programming </li>
+                    <li class="list-style-none">Communication Skills</li>
+                    <li class="list-style-none">Time Management</li>
+                    <li class="list-style-none">Attention to Detail
+                    <li class="list-style-none">Problem-Solving</li>
+                    <li class="list-style-none">Mentoring</li>
+                    <li class="list-style-none">Teamwork</li>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </section>
 
-<script src="./script.js"></script>
+    <!--=============== CONTACT SECTION ===============-->
+    <section id="contact" class="contact-section">
+        <h3 class="contact-heading">
+            I'm always interested in hearing about new projects, so if you'd like to
+            chat please get in touch.
+        </h3>
+        <form class="form-control">
+            <input placeholder="Full Name" class="text-field" type="text" name="name" id="fullName"
+                onchange="changeHandler()" maxlength="30" required />
+            <input placeholder="Email Address" class="text-field" type="email" name="email" id="email"
+                onchange="changeHandler()" required />
+            <textarea class="message-field" placeholder="Enter text here" name="message" id="message"
+                onchange="changeHandler()" maxlength="500" required></textarea>
+            <div>
+                <button type="submit" class="btn-primary" id="submit">
+                    Get In Touch
+                </button>
+                <button class="btn-primary" id="reset">Reset</button>
+            </div>
+            <div class="alert" id="alert-danger"></div>
+        </form>
+    </section>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+        <hr />
+        <ul class="footer-social-icons">
+            <li>
+                <a href="https://github.com/RashidMenhas" target=" _blank" rel="noopener">
+                    <div class="github-icon"></div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/rashid-menhas/" target=" _blank" rel="noopener">
+                    <div class="linkedin-icon"></div>
+                </a>
+            </li>
+            <li>
+                <a href="https://wellfound.com/u/rashid-menhas" target=" _blank" rel="noopener">
+                    <div class="angel-list-icon"></div>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/RashidM83664789" target="_blank" rel="noopener">
+                    <div class="twitter-list-icon"></div>
+                </a>
+            </li>
+            <li>
+                <a href="https://medium.com/@rashidmenhas10" target="_blank" rel="noopener">
+                    <div class="medium-list-icon"></div>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <!--=============== MODAL ===============-->
+    <div class="modal-container" id="myModal"></div>
 </body>
 
 </html>
