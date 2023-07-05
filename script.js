@@ -11,39 +11,48 @@ crossIcon.addEventListener('click', () => {
 // Projects
 const cards = [{
   cardId: 1,
-  title: 'Tonic',
-  desc: 'A daily selection of privately personalized reads; accounts or sign-ups required.',
-  imgScr: 'images/card.png',
-  cardTechs: ['html', 'css', 'javascript'],
-  source: 'https://github.com/RashidMenhas/My-Portfolio',
-  live: '#',
+  title: 'LEADERBOARD',
+  desc: 'I will set up a JavaScript project for the Leaderboard list app, using webpack and ES6 features.',
+  imgScr: 'images/upload.gif',
+  cardTechs: ['html', 'css', 'javascript','Reactjs'],
+  source: 'https://github.com/RashidMenhas/Leaderboard',
+  live: 'https://sami-leader-board.netlify.app/',
 },
 {
   cardId: 2,
-  title: 'Tonic',
-  desc: 'A daily selection of privately personalized reads; accounts or sign-ups required.',
-  imgScr: 'images/cardimg2.png',
-  cardTechs: ['html', 'css', 'javascript'],
-  source: 'https://github.com/RashidMenhas/My-Portfolio',
-  live: '#',
+  title: 'BOOKS STORE',
+  desc: 'Bookstore React Project - Discover, Explore, and Shop Books with Ease Explore a world of books with our Bookstore React Project. This user-friendly web application offers a seamless and immersive experience for book lovers. Discover an extensive collection of books across various genres, including bestsellers, classics, fiction, and non-fiction.',
+  imgScr: 'images/books-store.png',
+  cardTechs: ['React', 'Redux', 'javascript','HTML5'],
+  source: 'https://github.com/RashidMenhas/books-store',
+  live: 'https://subtle-brigadeiros-d2870f.netlify.app/',
 },
 {
   cardId: 3,
-  title: 'Tonic',
-  desc: 'A daily selection of privately personalized reads; accounts or sign-ups required.',
-  imgScr: 'images/cardimg3.png',
-  cardTechs: ['html', 'css', 'javascript'],
-  source: 'https://github.com/RashidMenhas/My-Portfolio',
-  live: '#',
+  title: 'MY BUDGET APP',
+  desc: 'The Ruby on Rails capstone project is about building a mobile web application where you can manage your budget.A list of transactions associated with a category, so that you can see how much money you spent and on what.BudgetTracker is a robust and user-friendly Ruby on Rails web application that empowers you to take control of your finances and achieve your financial goals with ease.',
+  imgScr: 'images/My budget.gif',
+  cardTechs: ['Ruby','OnRails', 'PostgreSQL', 'Tailwind'],
+  source: 'https://github.com/RashidMenhas/ROR-Capstone',
+  live: 'https://ror-capstone.onrender.com',
 },
 {
   cardId: 4,
-  title: 'Tonic',
-  desc: 'A daily selection of privately personalized reads; accounts or sign-ups required.',
-  imgScr: 'images/cardimg5.png',
-  cardTechs: ['html', 'css', 'javascript'],
-  source: 'https://github.com/RashidMenhas/My-Portfolio',
-  live: '#',
+  title: 'Space Travellers Hub',
+  desc: 'By building this web application, we aim to create an engaging platform that ignites users curiosity and enthusiasm for space exploration. Whether they are interested in commercial space tourism or contributing to scientific missions, our application will cater to their needs, making the process of booking rockets and joining space missions an exciting and seamless experience.',
+  imgScr: 'images/rocket.gif',
+  cardTechs: ['React.js', 'Webpack', 'HTML5', 'CSS3'],
+  source: 'https://github.com/RashidMenhas/Space-Traveller-s-Hub',
+  live: 'https://space-travel-hubs.netlify.app/',
+},
+{
+  cardId: 5,
+  title: 'Delicious Meals',
+  desc: 'A meal web app that retrieves data from an API could provide users with access to a vast library of recipes and nutritional information. Users can browse through the recipes, filter them based on their dietary requirements, or search for specific ingredients. The app can also provide a video link to show users how the meal is prepared step-by-step',
+  imgScr: 'images/delecious-meal.png',
+  cardTechs: ['CSS', 'HTML', 'SCSS', 'Webpack', 'JavaScript'],
+  source: 'https://github.com/RashidMenhas/Delicious-Meals',
+  live: 'https://osoro254alex.github.io/Delicious-Meals/',
 },
 ];
 
@@ -67,9 +76,10 @@ cards.forEach((card) => {
                   <p class="card-description">${card.desc}</p>
               </div>
               <ul class="card-languages">
-                  <li class="language-item ">${card.cardTechs[0]}</li>
-                  <li class="language-item ">${card.cardTechs[1]}</li>
-                  <li class="language-item ">${card.cardTechs[2]}</li>
+                   <li class="language-item ">${card.cardTechs[0]}</li>
+                   <li class="language-item ">${card.cardTechs[1]}</li>
+                   <li class="language-item ">${card.cardTechs[2]}</li>
+                   <li class="language-item ">${card.cardTechs[3]}</li>
               </ul>
                   <button id="see-project1" class="see-project btn-card-one" type="button">
                       See Project

@@ -125,15 +125,16 @@ a {
 
 .description {
   width: 327px;
-  height: 146px;
+  height: 316px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.5rem;
   line-height: 24px;
   margin-left: 24px;
   color: #344563;
   transition: transform 2s;
+  margin-top: 1rem;
 }
 
 .description:hover {
@@ -141,7 +142,7 @@ a {
 }
 
 .btn-connect {
-  width: 117px;
+  width: 170px;
   height: 40px;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
@@ -200,7 +201,7 @@ a {
 
 .card-section .card .card-heading img {
   display: block;
-  width: 295px;
+  width: 495px;
   height: 220px;
   margin-top: 16px;
   border-radius: 8px;
@@ -259,12 +260,14 @@ a {
 }
 
 .card-description {
+  height: 30px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   color: #344563;
+  text-overflow: hidden;
 }
 
 .card-languages {
@@ -278,13 +281,14 @@ a {
 .language-item {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.06em;
   color: #6070ff;
   background: #ebebff;
-  border-radius: 8px;
-  padding: 5px 8px;
+  border-radius: 5px;
+  padding: 7px 11px;
+  margin-right: -5px;
 }
 
 .language-item2 {
@@ -337,7 +341,6 @@ a {
   grid-template-columns: auto;
   gap: 20px;
   background-color: #fff;
-  padding: 20px;
   border: 0.01px solid white;
   border-top-right-radius: 200px;
 }
@@ -886,7 +889,7 @@ a {
   }
 
   .heading {
-    width: 400px;
+    width: 500px;
     height: 122px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -913,8 +916,8 @@ a {
     height: 74px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
+    font-weight: 500;
+    font-size: 22px;
     line-height: 22px;
     color: #344563;
     transition: transform 2s;
@@ -925,21 +928,24 @@ a {
   }
 
   .btn-connect {
-    width: 140px;
+    width: 160px;
     height: 35px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
     color: #7f8cff;
+    margin-top: 2.5rem;
   }
 
   .card-section .card {
-    width: auto;
-    height: 333px;
+    width: 80vw;
+    height: 353px;
     display: flex;
     flex-direction: row;
+    border: rgb(19, 18, 18) 0.5px solid;
+
   }
 
   .card-body .card-title {
@@ -956,6 +962,7 @@ a {
   .row-language .lang-card img {
     width: 70px;
     height: 70px;
+
   }
 
   .card-section {
@@ -968,6 +975,7 @@ a {
     background: #e5e5e5;
     justify-content: center;
     padding-bottom: 80px;
+
   }
 
   .order-1 {
@@ -980,10 +988,11 @@ a {
 
   .card-section .card .card-heading img {
     display: block;
-    width: 295px;
+    /* width: 295px; */
     height: 326px;
     margin-top: 0;
     border-radius: 8px;
+    
   }
 
   .card-heading:hover {
@@ -992,14 +1001,20 @@ a {
   }
 
   .card-description {
-    width: 370px;
-    height: 50px;
+    width: 400px;
+    height: 95px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
+    font-weight: 500;
+    font-size: 16px;
     line-height: 24px;
     color: #344563;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    overflow: hidden;
+
+
+
   }
 
   .btn-card-one {
@@ -1106,7 +1121,7 @@ a {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 24px;
     color: #6b778c;
   }
@@ -1402,13 +1417,13 @@ a {
   .language-item {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    font-size: 10px;
-    line-height: 5px;
-    letter-spacing: 0.03em;
+    font-size: 20px;
+    line-height: 15px;
+    letter-spacing: 0.05rem;
     color: #6070ff;
     background: #ebebff;
-    border-radius: 8px;
-    padding: 5px 5px;
+    border-radius: 5px;
+    padding: 10px 19px;
   }
 
   .popup-btns {
